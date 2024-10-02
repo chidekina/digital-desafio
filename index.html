@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h2>1. Digite um numero</h2>
+            <input type="number" name="number" id="checkNumber" />
+            <button onclick="checkNumber()" id="btn-check">Checar</button>
+            <button disabled onclick="restartNumber()" id="btn-restart-number">Reiniciar</button>
+            <div id="typeOfNumber">
+                <h4>O numero é: </h4>
+            </div>
+        </div>
+
+        <div>
+            <h2>2. Triangulo</h2>
+            <input type="number" name="side1" id="side1" placeholder="Digite o primeiro lado" />
+            <input type="number" name="side2" id="side2" placeholder="Digite o segundo lado" />
+            <input type="number" name="side3" id="side3" placeholder="Digite o terceiro lado" />
+            <button onclick="checkTriangle()" id="btn-triangle">Formar Trangulo</button>
+            <button disabled onclick="restartTriangle()" id="btn-triangle-restart">Reiniciar</button>
+            <div id="typeOfTriangle">
+                <h4>O triangulo é: </h4>
+            </div>
+
+            <div>
+                <h2>3. Ano Bisesxto</h2>
+                <input type="number" name="year" id="year" placeholder="Digite um ano" maxlength="4" />
+                <button onclick="checkYear()" id="btn-year">Checar ano</button>
+                <button disabled onclick="restartYear()" id="btn-year-restart">Reiniciar</button>
+                <div id="typeOfYear">
+                    <h4>O ano é: </h4>
+                </div>
+            </div>
+
+            <div>
+                <h2>4. Maior numero</h2>
+                <input type="number" name="number" id="anyNumber" placeholder="Digite um numero">
+                <button onclick="checkHighestNumber()" id="btn-insertNumber">Inserir Numero</button>
+                <div id="chosenNumbers">
+                    <h4>Os numeros escolhidos foram:</h4>
+                </div>
+                <div id="result-highestNumber">
+                    <h3>O maior numero é:</h3>
+                </div>
+            </div>
+
+            <div>
+                <h2>5. Par ou impar</h2>
+                <input type="number" name="number" id="evenOrOdd" placeholder="Digite um numero">
+                <button onclick="checkEvenOrOdd()" id="btn-evenOrOdd">Checar numero</button>
+                <button disabled onclick="restartEvenOrOdd()" id="btn-restart-evenOrOdd">Reiniciar</button>
+                <div id="result-evenOrOdd">
+                    <h4>O numero é: </h4>
+                </div>
+            </div>
+
+            <div>
+                <h2>6. preço final do produto</h2>
+                <input type="number" name="quantity" id="quantity" placeholder="Digite a quantidade">
+                <input type="number" name="price" id="price" placeholder="Digite o preço">
+                <button onclick="checkPrice()" id="btn-price">Checar preço</button>
+                <button disabled onclick="restartPrice()" id="btn-restart-price">Reiniciar</button>
+                <div id="discount">
+                    <h4>Desonto aplicado: </h4>
+                </div>
+                <div id="totalPrice">
+                    <h4>Total: </h4>
+                </div>
+            </div>
+
+            <div>
+                <h2>7. Conceito</h2>
+                <input type="number" name="concept" id="concept" placeholder="Digite sua nota">
+                <button onclick="checkConcept()" id="btn-concept">Checar conceito</button>
+                <button disabled onclick="restartConcept()" id="btn-restart-concept">Reiniciar</button>
+                <div id="result-concept">
+                    <h4>O conceito da nota é: </h4>
+                </div>
+            </div>
+
+            <div>
+                <h2>8. Vogal ou Consoante</h2>
+                <input type="string" name="vowelOrConsonant" id="vowelOrConsonant"  maxlength="1" placeholder="Digite uma letra" />
+                <button onclick="checkLetter()" id="btn-letter">Checar letra</button>
+                <button disabled onclick="restartLetter()" id="btn-restart-letter">Reiniciar</button>
+                <div id="result-letter">
+                    <h4>A letra é uma: </h4>
+                </div>
+            </div>
+
+            <div>
+                <h2>9. Dia da semana</h2>
+                <input type="number" name="weekday" id="weekday" min="1" max="7"  maxlength="1" placeholder="Digite um numero de 1 a 7" />
+                <button onclick="checkWeek()" id="btn-week">Checar letra</button>
+                <button disabled onclick="restartWeek()" id="btn-restart-week">Reiniciar</button>
+                <div id="result-week">
+                    <h4>O dia da semana é: </h4>
+                </div>
+            </div>
+
+            <div>
+                <h2>10. Imposto de Renda</h2>
+                <input type="number" name="income-tax" id="incomeTax" placeholder="Digite sua renda">
+                <button onclick="checkIncomeTax()" id="btn-tax">Checar taxa</button>
+                <button disabled onclick="restartTax()" id="btn-restart-tax">Reiniciar</button>
+                <div id="result-tax">
+                    <h4>A sua aliquota é de: </h4>
+                </div>
+                <div id="result-outcome">
+                    <h4>O total do seu imposto é de:</h4>
+                </div>
+            </div>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
